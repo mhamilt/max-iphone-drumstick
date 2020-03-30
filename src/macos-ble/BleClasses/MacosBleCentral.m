@@ -26,7 +26,7 @@
     if (self)
     {
         post("Start BLE\n");
-        self.discoveredPeripherals = [NSMutableArray array];        
+        self.discoveredPeripherals = [NSMutableArray array];
         _bleQueue = centralDelegateQueue;
         serviceUuid = scanServiceId;
         characteristicUuid = characteristicId;
@@ -47,7 +47,7 @@
     const char* deviceName = [[aPeripheral name] cStringUsingEncoding:NSASCIIStringEncoding];
     post("Found: %s\n", deviceName);
     
-    if ([[aPeripheral name] isEqualToString: @"BaronVonTigglestest"])
+    if ([[aPeripheral name] isEqualToString: _deviceName])
     {
         post("Connecting\n");
         _peripheral = aPeripheral;
@@ -93,6 +93,13 @@ didDisconnectPeripheral: (CBPeripheral *)aPeripheral
 
 
 //------------------------------------------------------------------------------
+- (void) scanForDeviceWithName:(NSString *) name
+{
+    post("Search for %s", [name cStringUsingEncoding:NSASCIIStringEncoding]);
+    _deviceName = name;
+}
+
+
 - (void) startScan
 {
     post("Start scanning\n");

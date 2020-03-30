@@ -11,11 +11,9 @@
 
 typedef CFTypeRef MacosBleCentralRef;
 MacosBleCentralRef MacosBleCentralRefCreate(void);
-void MacosBleCentralRefStartScan(MacosBleCentralRef t);
-void MacosBleCentralRefStopScan(MacosBleCentralRef t);
+void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name);
 
 typedef const void MacosBleCentralC; // 'const void *' is more CF-like, but either is fine
 MacosBleCentralC* newMacosBleCentralC(void);
-void MacosBleCentralC_startScan(MacosBleCentralC *t);
-void MacosBleCentralC_stopScan(MacosBleCentralC *t);
+void MacosBleCentralC_scanFor(MacosBleCentralC *t, const char* name);
 void MacosBleCentralC_release(MacosBleCentralC *t);

@@ -1,14 +1,4 @@
-//
-//  MacosBleCentral.h
-//  macos-cli-ble
-//
-//  Created by mhamilt7 on 26/03/2020.
-//  Copyright © 2020 mhamilt7. All rights reserved.
-//
-
-#ifndef MacosBleCentral_h
-#define MacosBleCentral_h
-
+#pragma once
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #include <stdio.h>
@@ -27,6 +17,7 @@
 }
 //------------------------------------------------------------------------------
 @property (retain) NSMutableArray *discoveredPeripherals;
+@property (strong, nonatomic) NSString *deviceName;
 @property (strong, nonatomic) CBCentralManager * manager;
 @property (strong, nonatomic) CBPeripheral *peripheral;
 @property (strong, atomic) CBService *currentService;
@@ -38,8 +29,6 @@
 - (instancetype)initWithQueue: (dispatch_queue_t) centralDelegateQueue
                 serviceToScan: (CBUUID *) scanServiceId
          characteristicToRead: (CBUUID *) characteristicId;
-- (void) startScan;
+- (void)scanForDeviceWithName: (NSString *) name;
 //------------------------------------------------------------------------------
 @end
-
-#endif /* MacosBleCentral_h */

@@ -3,16 +3,15 @@
 */
 
 #import "MacosBleCentralC.h"
-
 //------------------------------------------------------------------------------
 MacosBleCentralC* newMacosBleCentralC(void)
 {
     return CFBridgingRetain([MacosBleCentral new]);
 }
 //------------------------------------------------------------------------------
-void MacosBleCentralC_startScan(MacosBleCentralC *t)
+void MacosBleCentralC_scanFor(MacosBleCentralC *t, const char* name)
 {
-    [(__bridge MacosBleCentral *)t startScan];
+    [(__bridge MacosBleCentral *)t scanForDeviceWithName: [NSString stringWithCString:name encoding:NSASCIIStringEncoding] ];
 }
 //------------------------------------------------------------------------------
 void MacosBleCentralC_release(MacosBleCentralC *t)
@@ -24,7 +23,8 @@ MacosBleCentralRef MacosBleCentralRefCreate(void)
 {
      return CFBridgingRetain([MacosBleCentral new]);
 }
-void MacosBleCentralRefStartScan(MacosBleCentralRef t)
+
+void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name)
 {
-    [(__bridge MacosBleCentral *)t startScan];
+    [(__bridge MacosBleCentral *)t scanForDeviceWithName: [NSString stringWithCString:name encoding:NSASCIIStringEncoding] ];
 }

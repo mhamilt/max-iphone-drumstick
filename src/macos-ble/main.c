@@ -18,10 +18,11 @@ typedef struct _MaxExternalObject
     MacosBleCentralRef bleCentral;
 } MaxExternalObject;
 //------------------------------------------------------------------------------
-void* myExternalConstructor(long arg1)
+void* myExternalConstructor()
 {
     MaxExternalObject* maxObjectPtr = (MaxExternalObject*)object_alloc(myExternClass);
     maxObjectPtr->bleCentral = MacosBleCentralRefCreate();
+    MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "DEVICE_NAME");
     return maxObjectPtr;
 }
 //------------------------------------------------------------------------------
@@ -38,7 +39,7 @@ int C74_EXPORT main(void)
                            (method)myExternalConstructor,
                            (method)myExternDestructor,
                            (short)sizeof(MaxExternalObject),
-                           0L,                           
+                           0L,
                            0);
 
     class_register(CLASS_BOX, c);
