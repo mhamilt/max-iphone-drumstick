@@ -7,18 +7,15 @@
 #import <CoreFoundation/CoreFoundation.h>
 #ifdef __OBJC__
 #import "MacosBleCentral.h"
-
 #endif
-typedef const void MacosBleCentralC; // 'const void *' is more CF-like, but either is fine
-
 
 typedef CFTypeRef MacosBleCentralRef;
 MacosBleCentralRef MacosBleCentralRefCreate(void);
-void MacosBleCentralRefStartScan(MacosBleCentralC *t);
-void MacosBleCentralRefStopScan(MacosBleCentralC *t);
-float MacosBleCentralRefGetLatestValue(MacosBleCentralC *t);
+void MacosBleCentralRefStartScan(MacosBleCentralRef t);
+void MacosBleCentralRefStopScan(MacosBleCentralRef t);
 
+typedef const void MacosBleCentralC; // 'const void *' is more CF-like, but either is fine
+MacosBleCentralC* newMacosBleCentralC(void);
 void MacosBleCentralC_startScan(MacosBleCentralC *t);
 void MacosBleCentralC_stopScan(MacosBleCentralC *t);
-float MacosBleCentralC_getLatestValue(MacosBleCentralC *t);
 void MacosBleCentralC_release(MacosBleCentralC *t);

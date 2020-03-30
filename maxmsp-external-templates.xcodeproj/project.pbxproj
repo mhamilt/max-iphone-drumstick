@@ -196,9 +196,9 @@
 		58F0AC08242E31AC004FE028 /* BleClasses */ = {
 			isa = PBXGroup;
 			children = (
-				58F0AC14242E3696004FE028 /* MacosBleCentralC.h */,
 				58F0AC0A242E3205004FE028 /* MacosBleCentral.h */,
 				58F0AC09242E3205004FE028 /* MacosBleCentral.m */,
+				58F0AC14242E3696004FE028 /* MacosBleCentralC.h */,
 				58F0AC12242E3680004FE028 /* MacosBleCentralC.m */,
 			);
 			path = BleClasses;

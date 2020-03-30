@@ -11,7 +11,6 @@
 
 int main(int argc, const char * argv[])
 {
-
     MacosBleCentralC* bleCentral = newMacosBleCentralC();
     
     while(1);
