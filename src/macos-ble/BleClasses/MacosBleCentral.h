@@ -2,7 +2,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #include <stdio.h>
-
+#include <objc/runtime.h>
 #ifdef MAXMSP
 #include "ext.h"
 #else

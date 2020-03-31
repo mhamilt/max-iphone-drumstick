@@ -51,7 +51,7 @@
     {
         post("Connecting\n");
         _peripheral = aPeripheral;
-        [_manager connectPeripheral:_peripheral options:nil];
+        [_manager connectPeripheral:aPeripheral options:nil];
         [_manager stopScan];
     }
 }

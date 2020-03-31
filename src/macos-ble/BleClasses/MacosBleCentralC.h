@@ -5,6 +5,7 @@
  */
 #pragma once
 #import <CoreFoundation/CoreFoundation.h>
+#include <objc/runtime.h>
 #ifdef __OBJC__
 #import "MacosBleCentral.h"
 #endif

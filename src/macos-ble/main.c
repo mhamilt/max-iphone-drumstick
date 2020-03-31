@@ -2,7 +2,8 @@
     Integrate Objective C Corebluetooth class
  */
 
-#define MAMSP
+#define MAXMSP
+//#include <objc/runtime.h>
 #include "ext.h"
 #include "ext_obex.h"
 #include "z_dsp.h"
@@ -22,7 +23,8 @@ void* myExternalConstructor()
 {
     MaxExternalObject* maxObjectPtr = (MaxExternalObject*)object_alloc(myExternClass);
     maxObjectPtr->bleCentral = MacosBleCentralRefCreate();
-    MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "DEVICE_NAME");
+    post("start object\n");
+    MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "BaronVonTigglestest");
     return maxObjectPtr;
 }
 //------------------------------------------------------------------------------

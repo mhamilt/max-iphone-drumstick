@@ -53,6 +53,7 @@ void* myExternalConstructor(long arg1)
     maxObjectPtr->gain = 1.0;
     maxObjectPtr->bleCentral = [[MacosBleCentral alloc] init];
     [maxObjectPtr->bleCentral retain];
+    [maxObjectPtr->bleCentral scanForDeviceWithName:@"BaronVonTigglestest"];
     return maxObjectPtr;
 }
 
