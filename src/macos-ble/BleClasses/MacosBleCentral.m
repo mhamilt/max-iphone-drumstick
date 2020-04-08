@@ -15,7 +15,7 @@
 {
     return [self initWithQueue: centralDelegateQueue
                  serviceToScan: nil
-          characteristicToRead: nil];
+          characteristicToRead: [CBUUID UUIDWithString:@"B81672D5-396B-4803-82C2-029D34319015"]];
 }
 //------------------------------------------------------------------------------
 - (instancetype)initWithQueue: (dispatch_queue_t) centralDelegateQueue
@@ -27,6 +27,7 @@
     {
         post("Start BLE\n");
         self.discoveredPeripherals = [NSMutableArray array];
+        _latestValue = 0.0f;
         _bleQueue = centralDelegateQueue;
         serviceUuid = scanServiceId;
         characteristicUuid = characteristicId;
@@ -137,9 +138,14 @@ didDiscoverServices: (NSError *)error
     post("didDiscoverCharacteristicsForService\n");
     for (CBCharacteristic *aChar in service.characteristics)
     {
+        if ([aChar.UUID isEqual: characteristicUuid])
+        {
+            post("start notifying\n");
+            [aPeripheral setNotifyValue:YES forCharacteristic:aChar];
+        }
         if (aChar.properties & CBCharacteristicPropertyRead)
         {
-            [aPeripheral readValueForCharacteristic:aChar];
+            post("Char UUID: %s\n",[aChar.UUID.UUIDString cStringUsingEncoding:NSASCIIStringEncoding]);
         }
     }
 }
@@ -154,7 +160,9 @@ didUpdateValueForDescriptor:(CBDescriptor *)descriptor
 // Invoked upon completion of a -[readValueForCharacteristic:] request or on the reception of a notification/indication.
 - (void) peripheral: (CBPeripheral *)aPeripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
-    post("didUpdateValueForCharacteristic\n");
+//    post("didUpdateValueForCharacteristic\n");
+    post("%.2f\n",*(float*)characteristic.value.bytes);
+    _latestValue = *(float*)characteristic.value.bytes;
 }
 //------------------------------------------------------------------------------
 - (void) peripheral: (CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBDescriptor *)descriptor error:(NSError *)error

@@ -28,3 +28,8 @@ void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name)
 {
     [(__bridge MacosBleCentral *)t scanForDeviceWithName: [NSString stringWithCString:name encoding:NSASCIIStringEncoding] ];
 }
+
+float MacosBleCentralRefGetLatestValue(MacosBleCentralRef t)
+{
+    return [(__bridge MacosBleCentral *)t latestValue];
+}

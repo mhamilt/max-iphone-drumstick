@@ -13,6 +13,7 @@
 typedef CFTypeRef MacosBleCentralRef;
 MacosBleCentralRef MacosBleCentralRefCreate(void);
 void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name);
+float MacosBleCentralRefGetLatestValue(MacosBleCentralRef t);
 
 typedef const void MacosBleCentralC; // 'const void *' is more CF-like, but either is fine
 MacosBleCentralC* newMacosBleCentralC(void);

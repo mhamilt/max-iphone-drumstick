@@ -17,14 +17,18 @@ typedef struct _MaxExternalObject
     t_pxobject x_obj;
     t_symbol* x_arrayname;
     MacosBleCentralRef bleCentral;
+    void* float_out;
 } MaxExternalObject;
 //------------------------------------------------------------------------------
 void* myExternalConstructor()
 {
     MaxExternalObject* maxObjectPtr = (MaxExternalObject*)object_alloc(myExternClass);
     maxObjectPtr->bleCentral = MacosBleCentralRefCreate();
-    post("start object\n");
+    
     MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "BaronVonTigglestest");
+    
+    maxObjectPtr->float_out = outlet_new((t_object*)maxObjectPtr, "float");
+    outlet_new((t_object*)maxObjectPtr, "float");
     return maxObjectPtr;
 }
 //------------------------------------------------------------------------------
@@ -32,8 +36,18 @@ void myExternDestructor(MaxExternalObject* maxObjectPtr)
 {
     post("END");
 }
-
 //------------------------------------------------------------------------------
+void onBang(MaxExternalObject* maxObjectPtr)
+{
+    float latestVal = MacosBleCentralRefGetLatestValue(maxObjectPtr->bleCentral);
+    outlet_float(maxObjectPtr->float_out, latestVal);
+}
+//------------------------------------------------------------------------------
+void coupleMethodsToExternal( t_class* c)
+{
+    class_addmethod(c, (method)onBang, "bang", 0);
+}
+
 int C74_EXPORT main(void)
 {
     post("hello");
@@ -43,7 +57,7 @@ int C74_EXPORT main(void)
                            (short)sizeof(MaxExternalObject),
                            0L,
                            0);
-
+    coupleMethodsToExternal(c);
     class_register(CLASS_BOX, c);
     myExternClass = c;
     
