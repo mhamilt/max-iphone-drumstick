@@ -13,14 +13,6 @@
 //------------------------------------------------------------------------------
 void* myExternClass;
 //------------------------------------------------------------------------------
-//typedef struct _MaxExternalObject
-//{
-//    t_pxobject x_obj;
-//    t_symbol* x_arrayname;
-//    MacosBleCentralRef bleCentral;
-//    void* float_out;
-//} MaxExternalObject;
-//------------------------------------------------------------------------------
 void* myExternalConstructor()
 {
     MaxExternalObject* maxObjectPtr = (MaxExternalObject*)object_alloc(myExternClass);
@@ -52,7 +44,7 @@ void coupleMethodsToExternal( t_class* c)
 int C74_EXPORT main(void)
 {
     post("hello");
-    t_class* c = class_new("macos-ble",
+    t_class* c = class_new("iphone-drum",
                            (method)myExternalConstructor,
                            (method)myExternDestructor,
                            (short)sizeof(MaxExternalObject),

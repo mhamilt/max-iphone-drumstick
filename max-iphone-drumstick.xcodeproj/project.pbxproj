@@ -66,7 +66,7 @@
 		58567A41242A0A0A00271066 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
 		587196D324324E410059E189 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/QuickTime.framework; sourceTree = DEVELOPER_DIR; };
-		58F0AC04242E3110004FE028 /* macos-ble.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-ble.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58F0AC04242E3110004FE028 /* iphone-drum.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iphone-drum.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F0AC06242E3161004FE028 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		58F0AC09242E3205004FE028 /* MacosBleCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacosBleCentral.m; sourceTree = "<group>"; };
 		58F0AC0A242E3205004FE028 /* MacosBleCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacosBleCentral.h; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				2FBBEAE508F335360078DB84 /* mymspextern~.mxo */,
 				5848C4AB241B9E3500406164 /* mspcpp~.mxo */,
 				583DCAD1242CB9F500F108D5 /* mspobjc~.mxo */,
-				58F0AC04242E3110004FE028 /* macos-ble.mxo */,
+				58F0AC04242E3110004FE028 /* iphone-drum.mxo */,
 				58F0AC19242E46E2004FE028 /* class_test */,
 			);
 			name = Products;
@@ -293,9 +293,9 @@
 			productReference = 5848C4AB241B9E3500406164 /* mspcpp~.mxo */;
 			productType = "com.apple.product-type.bundle";
 		};
-		58F0ABFA242E3110004FE028 /* macos-ble */ = {
+		58F0ABFA242E3110004FE028 /* iphone-drum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58F0AC01242E3110004FE028 /* Build configuration list for PBXNativeTarget "macos-ble" */;
+			buildConfigurationList = 58F0AC01242E3110004FE028 /* Build configuration list for PBXNativeTarget "iphone-drum" */;
 			buildPhases = (
 				58F0ABFB242E3110004FE028 /* ShellScript */,
 				58F0ABFC242E3110004FE028 /* Sources */,
@@ -306,9 +306,9 @@
 			);
 			dependencies = (
 			);
-			name = "macos-ble";
+			name = "iphone-drum";
 			productName = iterator;
-			productReference = 58F0AC04242E3110004FE028 /* macos-ble.mxo */;
+			productReference = 58F0AC04242E3110004FE028 /* iphone-drum.mxo */;
 			productType = "com.apple.product-type.bundle";
 		};
 		58F0AC18242E46E2004FE028 /* class_test */ = {
@@ -367,7 +367,7 @@
 				5848C4A0241B9E3500406164 /* mspcpp~ */,
 				583DCAC7242CB9F500F108D5 /* mspobjc~ */,
 				2FBBEAD608F335360078DB84 /* max-external */,
-				58F0ABFA242E3110004FE028 /* macos-ble */,
+				58F0ABFA242E3110004FE028 /* iphone-drum */,
 				58F0AC18242E46E2004FE028 /* class_test */,
 			);
 		};
@@ -1013,7 +1013,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
 		};
-		58F0AC01242E3110004FE028 /* Build configuration list for PBXNativeTarget "macos-ble" */ = {
+		58F0AC01242E3110004FE028 /* Build configuration list for PBXNativeTarget "iphone-drum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58F0AC02242E3110004FE028 /* Development */,

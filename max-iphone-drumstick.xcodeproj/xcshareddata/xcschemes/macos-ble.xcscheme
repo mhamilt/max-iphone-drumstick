@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "58F0ABFA242E3110004FE028"
-               BuildableName = "macos-ble.mxo"
-               BlueprintName = "macos-ble"
+               BuildableName = "iphone-drum.mxo"
+               BlueprintName = "iphone-drum"
                ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -51,8 +51,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "58F0ABFA242E3110004FE028"
-            BuildableName = "macos-ble.mxo"
-            BlueprintName = "macos-ble"
+            BuildableName = "iphone-drum.mxo"
+            BlueprintName = "iphone-drum"
             ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -3,7 +3,7 @@
 #include "ext_obex.h"
 #include "z_dsp.h"
 #include "buffer.h"
-//#include "MacosBleCentralC.h"
+//------------------------------------------------------------------------------
 typedef CFTypeRef MacosBleCentralRef;
 typedef struct _MaxExternalObject
 {
@@ -12,4 +12,5 @@ typedef struct _MaxExternalObject
     MacosBleCentralRef bleCentral;
     void* float_out;
 } MaxExternalObject;
+
 void onBleNotify(MaxExternalObject* maxObjectPtr, float output);
