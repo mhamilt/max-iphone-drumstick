@@ -3,6 +3,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #include <stdio.h>
 #include <objc/runtime.h>
+#include "../MaxObject.h"
 #ifdef MAXMSP
 #include "ext.h"
 #else
@@ -14,6 +15,7 @@
 {
     CBUUID *serviceUuid;
     CBUUID *characteristicUuid;
+    MaxExternalObject* maxObjectRef;
 }
 //------------------------------------------------------------------------------
 @property (retain) NSMutableArray *discoveredPeripherals;
@@ -31,5 +33,6 @@
                 serviceToScan: (CBUUID *) scanServiceId
          characteristicToRead: (CBUUID *) characteristicId;
 - (void)scanForDeviceWithName: (NSString *) name;
+- (void)setMaxObjectRef: (MaxExternalObject *) extMaxObjectRef;
 //------------------------------------------------------------------------------
 @end

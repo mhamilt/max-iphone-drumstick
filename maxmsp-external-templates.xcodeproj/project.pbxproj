@@ -16,14 +16,12 @@
 		581515A0242F9ED80003A2A8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159B242F9C990003A2A8 /* CoreFoundation.framework */; };
 		583308812433178F00331097 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
 		583308822433178F00331097 /* MacosBleCentralC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC12242E3680004FE028 /* MacosBleCentralC.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
-		5833088324331AA600331097 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; };
-		5833088424331AA600331097 /* MacosBleCentralC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC12242E3680004FE028 /* MacosBleCentralC.m */; };
 		5833088824332BA500331097 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088724332BA500331097 /* CoreFoundation.framework */; };
 		5833088924332BAD00331097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC0E242E3241004FE028 /* Foundation.framework */; };
 		5833088A24332BB500331097 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC10242E3248004FE028 /* CoreBluetooth.framework */; };
-		5833088B24332BBF00331097 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587196D324324E410059E189 /* QuickTime.framework */; };
 		5833088D24332BC500331097 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088C24332BC500331097 /* Carbon.framework */; };
 		583DCAD4242CBA3F00F108D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 583DCAD3242CBA3F00F108D5 /* main.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
+		5849241E2444B0C000FB0C24 /* MaxObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5849241D2444B0C000FB0C24 /* MaxObject.c */; };
 		58567A42242A0A0A00271066 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58567A39242A0A0A00271066 /* main.c */; };
 		58567A49242A0A0A00271066 /* MattsOscsCinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58567A3E242A0A0A00271066 /* MattsOscsCinterface.cpp */; };
 		58567A4B242A0A0A00271066 /* MattsOscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58567A3F242A0A0A00271066 /* MattsOscs.cpp */; };
@@ -57,6 +55,8 @@
 		583DCAD1242CB9F500F108D5 /* mspobjc~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mspobjc~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		583DCAD3242CBA3F00F108D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5848C4AB241B9E3500406164 /* mspcpp~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mspcpp~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5849241C2444A64000FB0C24 /* MaxObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxObject.h; sourceTree = "<group>"; };
+		5849241D2444B0C000FB0C24 /* MaxObject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxObject.c; sourceTree = "<group>"; };
 		58567A39242A0A0A00271066 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		58567A3C242A0A0A00271066 /* MattsOscsCinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MattsOscsCinterface.h; sourceTree = "<group>"; };
 		58567A3D242A0A0A00271066 /* MattsOscs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MattsOscs.hpp; sourceTree = "<group>"; };
@@ -97,7 +97,6 @@
 				5833088A24332BB500331097 /* CoreBluetooth.framework in Frameworks */,
 				5833088924332BAD00331097 /* Foundation.framework in Frameworks */,
 				5833088D24332BC500331097 /* Carbon.framework in Frameworks */,
-				5833088B24332BBF00331097 /* QuickTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +199,8 @@
 			children = (
 				58F0AC08242E31AC004FE028 /* BleClasses */,
 				58F0AC06242E3161004FE028 /* main.c */,
+				5849241C2444A64000FB0C24 /* MaxObject.h */,
+				5849241D2444B0C000FB0C24 /* MaxObject.c */,
 			);
 			path = "macos-ble";
 			sourceTree = "<group>";
@@ -472,8 +473,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5833088324331AA600331097 /* MacosBleCentral.m in Sources */,
-				5833088424331AA600331097 /* MacosBleCentralC.m in Sources */,
 				58567A42242A0A0A00271066 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				583308812433178F00331097 /* MacosBleCentral.m in Sources */,
+				5849241E2444B0C000FB0C24 /* MaxObject.c in Sources */,
 				583308822433178F00331097 /* MacosBleCentralC.m in Sources */,
 				58F0AC07242E3161004FE028 /* main.c in Sources */,
 			);
@@ -788,7 +788,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -829,7 +829,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};

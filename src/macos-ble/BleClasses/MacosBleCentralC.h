@@ -6,11 +6,12 @@
 #pragma once
 #import <CoreFoundation/CoreFoundation.h>
 #include <objc/runtime.h>
+#include "../MaxObject.h"
 #ifdef __OBJC__
 #import "MacosBleCentral.h"
 #endif
 
-typedef CFTypeRef MacosBleCentralRef;
+//typedef CFTypeRef MacosBleCentralRef;
 MacosBleCentralRef MacosBleCentralRefCreate(void);
 void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name);
 float MacosBleCentralRefGetLatestValue(MacosBleCentralRef t);

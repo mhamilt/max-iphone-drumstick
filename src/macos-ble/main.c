@@ -8,17 +8,18 @@
 #include "ext_obex.h"
 #include "z_dsp.h"
 #include "buffer.h"
+#include "MaxObject.h"
 #include "MacosBleCentralC.h"
 //------------------------------------------------------------------------------
 void* myExternClass;
 //------------------------------------------------------------------------------
-typedef struct _MaxExternalObject
-{
-    t_pxobject x_obj;
-    t_symbol* x_arrayname;
-    MacosBleCentralRef bleCentral;
-    void* float_out;
-} MaxExternalObject;
+//typedef struct _MaxExternalObject
+//{
+//    t_pxobject x_obj;
+//    t_symbol* x_arrayname;
+//    MacosBleCentralRef bleCentral;
+//    void* float_out;
+//} MaxExternalObject;
 //------------------------------------------------------------------------------
 void* myExternalConstructor()
 {
@@ -60,6 +61,7 @@ int C74_EXPORT main(void)
     coupleMethodsToExternal(c);
     class_register(CLASS_BOX, c);
     myExternClass = c;
+    
     
     return 0;
 }

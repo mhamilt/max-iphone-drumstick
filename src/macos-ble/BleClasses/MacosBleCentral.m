@@ -163,6 +163,7 @@ didUpdateValueForDescriptor:(CBDescriptor *)descriptor
 //    post("didUpdateValueForCharacteristic\n");
     post("%.2f\n",*(float*)characteristic.value.bytes);
     _latestValue = *(float*)characteristic.value.bytes;
+    onBleNotify(maxObjectRef, _latestValue);
 }
 //------------------------------------------------------------------------------
 - (void) peripheral: (CBPeripheral *)peripheral didDiscoverDescriptorsForCharacteristic:(CBDescriptor *)descriptor error:(NSError *)error
@@ -182,4 +183,8 @@ didUpdateValueForDescriptor:(CBDescriptor *)descriptor
     [self startScan];
 }
 //------------------------------------------------------------------------------
+- (void)setMaxObjectRef: (MaxExternalObject *) extMaxObjectRef
+{
+    maxObjectRef = extMaxObjectRef;
+}
 @end
