@@ -17,7 +17,7 @@
                BlueprintIdentifier = "5848C4A0241B9E3500406164"
                BuildableName = "mspcpp~.mxo"
                BlueprintName = "mspcpp~"
-               ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+               ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -53,7 +53,7 @@
             BlueprintIdentifier = "5848C4A0241B9E3500406164"
             BuildableName = "mspcpp~.mxo"
             BlueprintName = "mspcpp~"
-            ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+            ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

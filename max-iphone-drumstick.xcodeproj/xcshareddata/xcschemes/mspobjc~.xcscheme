@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FBBEAD608F335360078DB84"
-               BuildableName = "mymspextern~.mxo"
-               BlueprintName = "max-external"
-               ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+               BlueprintIdentifier = "583DCAC7242CB9F500F108D5"
+               BuildableName = "mspobjc~.mxo"
+               BlueprintName = "mspobjc~"
+               ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -50,10 +50,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FBBEAD608F335360078DB84"
-            BuildableName = "mymspextern~.mxo"
-            BlueprintName = "max-external"
-            ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+            BlueprintIdentifier = "583DCAC7242CB9F500F108D5"
+            BuildableName = "mspobjc~.mxo"
+            BlueprintName = "mspobjc~"
+            ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

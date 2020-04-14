@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "58F0AC18242E46E2004FE028"
-               BuildableName = "class_test"
-               BlueprintName = "class_test"
-               ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+               BlueprintIdentifier = "2FBBEAD608F335360078DB84"
+               BuildableName = "mymspextern~.mxo"
+               BlueprintName = "max-external"
+               ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "58F0AC18242E46E2004FE028"
-            BuildableName = "class_test"
-            BlueprintName = "class_test"
-            ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Deployment"
@@ -57,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "58F0AC18242E46E2004FE028"
-            BuildableName = "class_test"
-            BlueprintName = "class_test"
-            ReferencedContainer = "container:maxmsp-external-templates.xcodeproj">
+            BlueprintIdentifier = "2FBBEAD608F335360078DB84"
+            BuildableName = "mymspextern~.mxo"
+            BlueprintName = "max-external"
+            ReferencedContainer = "container:max-iphone-drumstick.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Development">
