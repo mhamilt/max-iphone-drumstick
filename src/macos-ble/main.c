@@ -18,10 +18,11 @@ void* myExternalConstructor()
     MaxExternalObject* maxObjectPtr = (MaxExternalObject*)object_alloc(myExternClass);
     maxObjectPtr->bleCentral = MacosBleCentralRefCreate();
     
-    MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "BaronVonTigglestest");
+    MacosBleCentralRefSetMaxObjRef(maxObjectPtr->bleCentral, maxObjectPtr);
+    MacosBleCentralRefScanFor(maxObjectPtr->bleCentral, "DrumStick");
     
-    maxObjectPtr->float_out = outlet_new((t_object*)maxObjectPtr, "float");
-    outlet_new((t_object*)maxObjectPtr, "float");
+    maxObjectPtr->int_out = outlet_new((t_object*)maxObjectPtr, "float");
+    outlet_new((t_object*)maxObjectPtr, "int");
     return maxObjectPtr;
 }
 //------------------------------------------------------------------------------
@@ -33,7 +34,7 @@ void myExternDestructor(MaxExternalObject* maxObjectPtr)
 void onBang(MaxExternalObject* maxObjectPtr)
 {
     float latestVal = MacosBleCentralRefGetLatestValue(maxObjectPtr->bleCentral);
-    outlet_float(maxObjectPtr->float_out, latestVal);
+    outlet_float(maxObjectPtr->int_out, latestVal);
 }
 //------------------------------------------------------------------------------
 void coupleMethodsToExternal( t_class* c)

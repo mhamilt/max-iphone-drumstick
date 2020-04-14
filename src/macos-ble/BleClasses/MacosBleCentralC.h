@@ -14,9 +14,10 @@
 //typedef CFTypeRef MacosBleCentralRef;
 MacosBleCentralRef MacosBleCentralRefCreate(void);
 void MacosBleCentralRefScanFor(MacosBleCentralRef t, const char* name);
-float MacosBleCentralRefGetLatestValue(MacosBleCentralRef t);
-
+int MacosBleCentralRefGetLatestValue(MacosBleCentralRef t);
+void MacosBleCentralRefSetMaxObjRef(MacosBleCentralRef t, MaxExternalObject* maxObjRef);
 typedef const void MacosBleCentralC; // 'const void *' is more CF-like, but either is fine
 MacosBleCentralC* newMacosBleCentralC(void);
 void MacosBleCentralC_scanFor(MacosBleCentralC *t, const char* name);
 void MacosBleCentralC_release(MacosBleCentralC *t);
+ 

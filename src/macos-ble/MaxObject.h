@@ -10,7 +10,7 @@ typedef struct _MaxExternalObject
     t_pxobject x_obj;
     t_symbol* x_arrayname;
     MacosBleCentralRef bleCentral;
-    void* float_out;
+    void* int_out;
 } MaxExternalObject;
 
-void onBleNotify(MaxExternalObject* maxObjectPtr, float output);
+void onBleNotify(MaxExternalObject* maxObjectPtr, int output);

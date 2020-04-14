@@ -27,7 +27,7 @@
     {
         post("Start BLE\n");
         self.discoveredPeripherals = [NSMutableArray array];
-        _latestValue = 0.0f;
+        _latestValue = 0;
         _bleQueue = centralDelegateQueue;
         serviceUuid = scanServiceId;
         characteristicUuid = characteristicId;
@@ -162,7 +162,7 @@ didUpdateValueForDescriptor:(CBDescriptor *)descriptor
 {
 //    post("didUpdateValueForCharacteristic\n");
     post("%.2f\n",*(float*)characteristic.value.bytes);
-    _latestValue = *(float*)characteristic.value.bytes;
+    _latestValue = *(int*)characteristic.value.bytes;
     onBleNotify(maxObjectRef, _latestValue);
 }
 //------------------------------------------------------------------------------

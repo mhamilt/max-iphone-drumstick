@@ -1,7 +1,7 @@
 #include "MaxObject.h"
 //------------------------------------------------------------------------------
-void onBleNotify(MaxExternalObject* maxObjectPtr, float output)
+void onBleNotify(MaxExternalObject* maxObjectPtr, int output)
 {
-    outlet_float(maxObjectPtr->float_out, output);
+    outlet_float(maxObjectPtr->int_out, output);
 }
 //------------------------------------------------------------------------------

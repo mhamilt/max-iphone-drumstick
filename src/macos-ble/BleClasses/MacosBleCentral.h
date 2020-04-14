@@ -25,7 +25,7 @@
 @property (strong, atomic) CBService *currentService;
 @property (strong, nonatomic) dispatch_queue_t bleQueue;
 @property (copy) NSString *manufacturer;
-@property (atomic) float latestValue;
+@property (atomic) int latestValue;
 //------------------------------------------------------------------------------
 - (instancetype)init;
 - (instancetype)initWithQueue: (dispatch_queue_t) centralDelegateQueue;
