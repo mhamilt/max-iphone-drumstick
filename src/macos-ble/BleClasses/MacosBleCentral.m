@@ -161,7 +161,7 @@ didUpdateValueForDescriptor:(CBDescriptor *)descriptor
 - (void) peripheral: (CBPeripheral *)aPeripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
 //    post("didUpdateValueForCharacteristic\n");
-    post("%.2f\n",*(float*)characteristic.value.bytes);
+    post("%d\n",*(int*)characteristic.value.bytes);
     _latestValue = *(int*)characteristic.value.bytes;
     onBleNotify(maxObjectRef, _latestValue);
 }
