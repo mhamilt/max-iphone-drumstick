@@ -12,11 +12,8 @@
 		5815159E242F9C9F0003A2A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159D242F9C9F0003A2A8 /* Foundation.framework */; };
 		583308812433178F00331097 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
 		583308822433178F00331097 /* MacosBleCentralC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC12242E3680004FE028 /* MacosBleCentralC.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
-		5833088824332BA500331097 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088724332BA500331097 /* CoreFoundation.framework */; };
-		5833088924332BAD00331097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC0E242E3241004FE028 /* Foundation.framework */; };
-		5833088A24332BB500331097 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC10242E3248004FE028 /* CoreBluetooth.framework */; };
-		5833088D24332BC500331097 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088C24332BC500331097 /* Carbon.framework */; };
 		5849241E2444B0C000FB0C24 /* MaxObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5849241D2444B0C000FB0C24 /* MaxObject.c */; };
+		589D3E7A2448204C00FFA01E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589D3E792448204C00FFA01E /* CoreBluetooth.framework */; };
 		58F0AC07242E3161004FE028 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC06242E3161004FE028 /* main.c */; };
 		58F0AC1C242E46E2004FE028 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC1B242E46E2004FE028 /* main.c */; };
 		58F0AC20242E46FF004FE028 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; };
@@ -45,6 +42,7 @@
 		5849241D2444B0C000FB0C24 /* MaxObject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxObject.c; sourceTree = "<group>"; };
 		5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
 		587196D324324E410059E189 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/QuickTime.framework; sourceTree = DEVELOPER_DIR; };
+		589D3E792448204C00FFA01E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		58F0AC04242E3110004FE028 /* iphone-drum.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iphone-drum.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F0AC06242E3161004FE028 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		58F0AC09242E3205004FE028 /* MacosBleCentral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacosBleCentral.m; sourceTree = "<group>"; };
@@ -62,10 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5833088824332BA500331097 /* CoreFoundation.framework in Frameworks */,
-				5833088A24332BB500331097 /* CoreBluetooth.framework in Frameworks */,
-				5833088924332BAD00331097 /* Foundation.framework in Frameworks */,
-				5833088D24332BC500331097 /* Carbon.framework in Frameworks */,
+				589D3E7A2448204C00FFA01E /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +131,7 @@
 		58F0AC0D242E3241004FE028 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				589D3E792448204C00FFA01E /* CoreBluetooth.framework */,
 				5833088C24332BC500331097 /* Carbon.framework */,
 				5833088724332BA500331097 /* CoreFoundation.framework */,
 				587196D324324E410059E189 /* QuickTime.framework */,
