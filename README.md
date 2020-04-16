@@ -78,3 +78,17 @@ The vanilla C approach. There are plenty of examples in the sdk, but this target
 If you have already coded a ton of DSP C++ classes for something like JUCE, you may want to start here.
 
 Demonstrates using `extern "C"` to write wrappers for pre-existing c++ classes. you need only write wrapper functions for public class methods or anything that needs to be called directly in `C`
+
+
+## Objc and Max SDK
+
+For utilising Objective C classes, and therefore exposing the Cocoa API there are a couple of approches.
+
+### Compile as Objective C
+
+To compile as Objective C, then in Xcode you can simply change the file extension of main to `.m`.
+
+#### Draw backs
+
+- Without re-writing the SDK, ARC will have to be switched off
+- As such: to compiler flags you will need to add `other linker flags:  -framework MaxAudioAPI -framework JitterAPI $(C74_SYM_LINKER_FLAGS) -Xlinker -U -Xlinker _objc_loadClassref`
