@@ -7,25 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58151596242F81C40003A2A8 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
-		58151599242F820E0003A2A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58151598242F820E0003A2A8 /* CoreBluetooth.framework */; };
 		5815159A242F9C900003A2A8 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58151598242F820E0003A2A8 /* CoreBluetooth.framework */; };
 		5815159C242F9C990003A2A8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159B242F9C990003A2A8 /* CoreFoundation.framework */; };
 		5815159E242F9C9F0003A2A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159D242F9C9F0003A2A8 /* Foundation.framework */; };
-		5815159F242F9ED30003A2A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159D242F9C9F0003A2A8 /* Foundation.framework */; };
-		581515A0242F9ED80003A2A8 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5815159B242F9C990003A2A8 /* CoreFoundation.framework */; };
 		583308812433178F00331097 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
 		583308822433178F00331097 /* MacosBleCentralC.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC12242E3680004FE028 /* MacosBleCentralC.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
 		5833088824332BA500331097 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088724332BA500331097 /* CoreFoundation.framework */; };
 		5833088924332BAD00331097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC0E242E3241004FE028 /* Foundation.framework */; };
 		5833088A24332BB500331097 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58F0AC10242E3248004FE028 /* CoreBluetooth.framework */; };
 		5833088D24332BC500331097 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5833088C24332BC500331097 /* Carbon.framework */; };
-		583DCAD4242CBA3F00F108D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 583DCAD3242CBA3F00F108D5 /* main.m */; settings = {COMPILER_FLAGS = "-D MAXMSP"; }; };
 		5849241E2444B0C000FB0C24 /* MaxObject.c in Sources */ = {isa = PBXBuildFile; fileRef = 5849241D2444B0C000FB0C24 /* MaxObject.c */; };
-		58567A42242A0A0A00271066 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58567A39242A0A0A00271066 /* main.c */; };
-		58567A49242A0A0A00271066 /* MattsOscsCinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58567A3E242A0A0A00271066 /* MattsOscsCinterface.cpp */; };
-		58567A4B242A0A0A00271066 /* MattsOscs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58567A3F242A0A0A00271066 /* MattsOscs.cpp */; };
-		58567A4F242A0A0A00271066 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58567A41242A0A0A00271066 /* main.c */; };
 		58F0AC07242E3161004FE028 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC06242E3161004FE028 /* main.c */; };
 		58F0AC1C242E46E2004FE028 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC1B242E46E2004FE028 /* main.c */; };
 		58F0AC20242E46FF004FE028 /* MacosBleCentral.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F0AC09242E3205004FE028 /* MacosBleCentral.m */; };
@@ -45,25 +36,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2FBBEAE508F335360078DB84 /* mymspextern~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mymspextern~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58151598242F820E0003A2A8 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
 		5815159B242F9C990003A2A8 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		5815159D242F9C9F0003A2A8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		581515A1242F9F480003A2A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5833088724332BA500331097 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		5833088C24332BC500331097 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		583DCAD1242CB9F500F108D5 /* mspobjc~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mspobjc~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
-		583DCAD3242CBA3F00F108D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5848C4AB241B9E3500406164 /* mspcpp~.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mspcpp~.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5849241C2444A64000FB0C24 /* MaxObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaxObject.h; sourceTree = "<group>"; };
 		5849241D2444B0C000FB0C24 /* MaxObject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MaxObject.c; sourceTree = "<group>"; };
-		58567A39242A0A0A00271066 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		58567A3C242A0A0A00271066 /* MattsOscsCinterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MattsOscsCinterface.h; sourceTree = "<group>"; };
-		58567A3D242A0A0A00271066 /* MattsOscs.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MattsOscs.hpp; sourceTree = "<group>"; };
-		58567A3E242A0A0A00271066 /* MattsOscsCinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MattsOscsCinterface.cpp; sourceTree = "<group>"; };
-		58567A3F242A0A0A00271066 /* MattsOscs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MattsOscs.cpp; sourceTree = "<group>"; };
-		58567A40242A0A0A00271066 /* switch_string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = switch_string.h; sourceTree = "<group>"; };
-		58567A41242A0A0A00271066 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = maxmspsdk.xcconfig; sourceTree = "<group>"; };
 		587196D324324E410059E189 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/QuickTime.framework; sourceTree = DEVELOPER_DIR; };
 		58F0AC04242E3110004FE028 /* iphone-drum.mxo */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iphone-drum.mxo"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,16 +58,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		58151597242F82050003A2A8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58151599242F820E0003A2A8 /* CoreBluetooth.framework in Frameworks */,
-				5815159F242F9ED30003A2A8 /* Foundation.framework in Frameworks */,
-				581515A0242F9ED80003A2A8 /* CoreFoundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58F0AC0C242E3238004FE028 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,30 +96,10 @@
 		19C28FB4FE9D528D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FBBEAE508F335360078DB84 /* mymspextern~.mxo */,
-				5848C4AB241B9E3500406164 /* mspcpp~.mxo */,
-				583DCAD1242CB9F500F108D5 /* mspobjc~.mxo */,
 				58F0AC04242E3110004FE028 /* iphone-drum.mxo */,
 				58F0AC19242E46E2004FE028 /* class_test */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		583DCAC5242CB50400F108D5 /* utilities */ = {
-			isa = PBXGroup;
-			children = (
-				58567A40242A0A0A00271066 /* switch_string.h */,
-			);
-			path = utilities;
-			sourceTree = "<group>";
-		};
-		583DCAD2242CBA0E00F108D5 /* mspobjc */ = {
-			isa = PBXGroup;
-			children = (
-				583DCAD3242CBA3F00F108D5 /* main.m */,
-				581515A1242F9F480003A2A8 /* Info.plist */,
-			);
-			path = mspobjc;
 			sourceTree = "<group>";
 		};
 		58567A37242A0A0A00271066 /* src */ = {
@@ -158,40 +107,8 @@
 			children = (
 				5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */,
 				58F0AC05242E3140004FE028 /* macos-ble */,
-				58567A38242A0A0A00271066 /* mymspextern */,
-				58567A3A242A0A0A00271066 /* mspcpp */,
-				583DCAD2242CBA0E00F108D5 /* mspobjc */,
 			);
 			path = src;
-			sourceTree = "<group>";
-		};
-		58567A38242A0A0A00271066 /* mymspextern */ = {
-			isa = PBXGroup;
-			children = (
-				58567A39242A0A0A00271066 /* main.c */,
-			);
-			path = mymspextern;
-			sourceTree = "<group>";
-		};
-		58567A3A242A0A0A00271066 /* mspcpp */ = {
-			isa = PBXGroup;
-			children = (
-				583DCAC5242CB50400F108D5 /* utilities */,
-				58567A3B242A0A0A00271066 /* cpp_files */,
-				58567A41242A0A0A00271066 /* main.c */,
-			);
-			path = mspcpp;
-			sourceTree = "<group>";
-		};
-		58567A3B242A0A0A00271066 /* cpp_files */ = {
-			isa = PBXGroup;
-			children = (
-				58567A3C242A0A0A00271066 /* MattsOscsCinterface.h */,
-				58567A3D242A0A0A00271066 /* MattsOscs.hpp */,
-				58567A3E242A0A0A00271066 /* MattsOscsCinterface.cpp */,
-				58567A3F242A0A0A00271066 /* MattsOscs.cpp */,
-			);
-			path = cpp_files;
 			sourceTree = "<group>";
 		};
 		58F0AC05242E3140004FE028 /* macos-ble */ = {
@@ -242,57 +159,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FBBEAD608F335360078DB84 /* max-external */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2FBBEAE008F335360078DB84 /* Build configuration list for PBXNativeTarget "max-external" */;
-			buildPhases = (
-				589FD427242A26FE00C7C9DC /* ShellScript */,
-				2FBBEADA08F335360078DB84 /* Sources */,
-				2FBBEADF08F335360078DB84 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "max-external";
-			productName = iterator;
-			productReference = 2FBBEAE508F335360078DB84 /* mymspextern~.mxo */;
-			productType = "com.apple.product-type.bundle";
-		};
-		583DCAC7242CB9F500F108D5 /* mspobjc~ */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 583DCACE242CB9F500F108D5 /* Build configuration list for PBXNativeTarget "mspobjc~" */;
-			buildPhases = (
-				583DCAC8242CB9F500F108D5 /* ShellScript */,
-				583DCAC9242CB9F500F108D5 /* Sources */,
-				58151597242F82050003A2A8 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "mspobjc~";
-			productName = iterator;
-			productReference = 583DCAD1242CB9F500F108D5 /* mspobjc~.mxo */;
-			productType = "com.apple.product-type.bundle";
-		};
-		5848C4A0241B9E3500406164 /* mspcpp~ */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5848C4A8241B9E3500406164 /* Build configuration list for PBXNativeTarget "mspcpp~" */;
-			buildPhases = (
-				583DCAC6242CB76F00F108D5 /* ShellScript */,
-				5848C4A4241B9E3500406164 /* Sources */,
-				5848C4A7241B9E3500406164 /* Rez */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "mspcpp~";
-			productName = iterator;
-			productReference = 5848C4AB241B9E3500406164 /* mspcpp~.mxo */;
-			productType = "com.apple.product-type.bundle";
-		};
 		58F0ABFA242E3110004FE028 /* iphone-drum */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58F0AC01242E3110004FE028 /* Build configuration list for PBXNativeTarget "iphone-drum" */;
@@ -336,10 +202,6 @@
 			attributes = {
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
-					583DCAC7242CB9F500F108D5 = {
-						DevelopmentTeam = XZ388CS8AV;
-						ProvisioningStyle = Automatic;
-					};
 					58F0ABFA242E3110004FE028 = {
 						ProvisioningStyle = Manual;
 					};
@@ -364,9 +226,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5848C4A0241B9E3500406164 /* mspcpp~ */,
-				583DCAC7242CB9F500F108D5 /* mspobjc~ */,
-				2FBBEAD608F335360078DB84 /* max-external */,
 				58F0ABFA242E3110004FE028 /* iphone-drum */,
 				58F0AC18242E46E2004FE028 /* class_test */,
 			);
@@ -374,20 +233,6 @@
 /* End PBXProject section */
 
 /* Begin PBXRezBuildPhase section */
-		2FBBEADF08F335360078DB84 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5848C4A7241B9E3500406164 /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58F0AC00242E3110004FE028 /* Rez */ = {
 			isa = PBXRezBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,57 +243,6 @@
 /* End PBXRezBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		583DCAC6242CB76F00F108D5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ ! \"$(ls -A max-sdk)\" ]]; then \ngit submodule update --init;\necho \"error: Max SDK not present, try building again\"\nexit 1\nfi\n";
-		};
-		583DCAC8242CB9F500F108D5 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ ! \"$(ls -A max-sdk)\" ]]; then \ngit submodule update --init;\necho \"error: Max SDK not present, try building again\"\nexit 1\nfi\n\n";
-		};
-		589FD427242A26FE00C7C9DC /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [[ ! \"$(ls -A max-sdk)\" ]]; then \ngit submodule update --init;\necho \"error: Max SDK not present, try building again\"\nexit 1\nfi\n";
-		};
 		58F0ABFB242E3110004FE028 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,33 +263,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2FBBEADA08F335360078DB84 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58567A42242A0A0A00271066 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		583DCAC9242CB9F500F108D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58151596242F81C40003A2A8 /* MacosBleCentral.m in Sources */,
-				583DCAD4242CBA3F00F108D5 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5848C4A4241B9E3500406164 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				58567A4F242A0A0A00271066 /* main.c in Sources */,
-				58567A4B242A0A0A00271066 /* MattsOscs.cpp in Sources */,
-				58567A49242A0A0A00271066 /* MattsOscsCinterface.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58F0ABFC242E3110004FE028 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -553,7 +320,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx10.11;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -588,166 +355,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				SDKROOT = macosx10.11;
-			};
-			name = Deployment;
-		};
-		2FBBEAE108F335360078DB84 /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_MODULES = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_LINK_OBJC_RUNTIME = YES;
-				CLANG_WARN_PRIVATE_MODULE = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "max-sdk/source/Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					MaxAudioAPI,
-					"-framework",
-					JitterAPI,
-					"$(C74_SYM_LINKER_FLAGS)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "mymspextern~";
-				SDKROOT = "macos-sdk/MacOSX10.11.sdk";
-			};
-			name = Development;
-		};
-		2FBBEAE208F335360078DB84 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_MODULES = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_LINK_OBJC_RUNTIME = YES;
-				CLANG_WARN_PRIVATE_MODULE = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "max-sdk/source/Info.plist";
-				OTHER_LDFLAGS = (
-					"-framework",
-					MaxAudioAPI,
-					"-framework",
-					JitterAPI,
-					"$(C74_SYM_LINKER_FLAGS)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "mymspextern~";
-				SDKROOT = "macos-sdk/MacOSX10.11.sdk";
-			};
-			name = Deployment;
-		};
-		583DCACF242CB9F500F108D5 /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 7.1.0;
-				DEVELOPMENT_TEAM = XZ388CS8AV;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/src/mspobjc/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 7.1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					MaxAudioAPI,
-					"-framework",
-					JitterAPI,
-					"$(C74_SYM_LINKER_FLAGS)",
-					"-Xlinker",
-					"-U",
-					"-Xlinker",
-					_objc_loadClassref,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.11;
-			};
-			name = Development;
-		};
-		583DCAD0242CB9F500F108D5 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = YES;
-				CURRENT_PROJECT_VERSION = 7.1.0;
-				DEVELOPMENT_TEAM = XZ388CS8AV;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "$(SRCROOT)/src/mspobjc/Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MARKETING_VERSION = 7.1.0;
-				OTHER_LDFLAGS = (
-					"-framework",
-					MaxAudioAPI,
-					"-framework",
-					JitterAPI,
-					"$(C74_SYM_LINKER_FLAGS)",
-					"-Xlinker",
-					"-U",
-					"-Xlinker",
-					_objc_loadClassref,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx10.11;
-			};
-			name = Deployment;
-		};
-		5848C4A9241B9E3500406164 /* Development */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "max-sdk/source/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "macos-sdk/MacOSX10.11.sdk";
-			};
-			name = Development;
-		};
-		5848C4AA241B9E3500406164 /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5868BA8D241A6C1600152060 /* maxmspsdk.xcconfig */;
-			buildSettings = {
-				C74_SYM_LINKER_FLAGS = "@$(C74SUPPORT)/max-includes/c74_linker_flags.txt\"";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				COPY_PHASE_STRIP = YES;
-				GCC_PREFIX_HEADER = "$(C74SUPPORT)/max-includes/macho-prefix.pch";
-				INFOPLIST_FILE = "max-sdk/source/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cycling74.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = "macos-sdk/MacOSX10.11.sdk";
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
@@ -903,7 +511,7 @@
 					_objc_loadClassref,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
@@ -970,7 +578,7 @@
 					_objc_loadClassref,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx10.12;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
@@ -982,33 +590,6 @@
 			buildConfigurations = (
 				2FBBEAD008F335010078DB84 /* Development */,
 				2FBBEAD108F335010078DB84 /* Deployment */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Development;
-		};
-		2FBBEAE008F335360078DB84 /* Build configuration list for PBXNativeTarget "max-external" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2FBBEAE108F335360078DB84 /* Development */,
-				2FBBEAE208F335360078DB84 /* Deployment */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Development;
-		};
-		583DCACE242CB9F500F108D5 /* Build configuration list for PBXNativeTarget "mspobjc~" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				583DCACF242CB9F500F108D5 /* Development */,
-				583DCAD0242CB9F500F108D5 /* Deployment */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Development;
-		};
-		5848C4A8241B9E3500406164 /* Build configuration list for PBXNativeTarget "mspcpp~" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5848C4A9241B9E3500406164 /* Development */,
-				5848C4AA241B9E3500406164 /* Deployment */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;
